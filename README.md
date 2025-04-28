@@ -37,19 +37,21 @@ python manage.py runserver
 ```
 
 
-## Create a new app of attractions
+## Create a new app
 
 ```bash
-python manage.py startapp attractions
-
-pip install -r requirements.txt
+python manage.py startapp trip_planner_api
 
 python manage.py makemigrations
 ```
 
+Install the required package:
+
+```bash
+pip install -r requirements.txt
+```
 
 
-## Install the required package
 
 ## Django Project vs. App
 
@@ -57,8 +59,10 @@ A Django project is the entire web application. It contains settings, URLs, and 
 
 A Django app is a component of the project that handles a specific functionality.
 
+## Each files under app
 
-
-
-
-
+- models.py: defines the database structure
+- serializers.py: handles the conversion between Python objects and JSON
+- views.py: contains the business logic of the application
+- urls.py: defines the URL routing
+- admin.py: configures the Django admin interface
