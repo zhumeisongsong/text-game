@@ -1,4 +1,4 @@
-# text-game
+# trip_planner
 A playground to practice Django.
 
 ## Set up a Django project
@@ -14,7 +14,7 @@ source venv/bin/activate && pip install django
 2. Create a new Django project
 
 ```bash
-django-admin startproject text_game // name should use underscores instead of hyphens
+django-admin startproject trip_planner . // name should use underscores instead of hyphens
 ```
 
 3. Create a requirements.txt file to track our dependencies
@@ -37,6 +37,25 @@ python manage.py runserver
 ```
 
 
+## Create a new app of attractions
+
+```bash
+python manage.py startapp attractions
+
+pip install -r requirements.txt
+
+python manage.py makemigrations
+```
+
+
+
+## Install the required package
+
+## Django Project vs. App
+
+A Django project is the entire web application. It contains settings, URLs, and configuration.
+
+A Django app is a component of the project that handles a specific functionality.
 
 
 

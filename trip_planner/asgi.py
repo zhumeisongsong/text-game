@@ -1,5 +1,5 @@
 """
-ASGI config for text_game project.
+ASGI config for trip_planner project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'src.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'trip_planner.settings')
 
 application = get_asgi_application()
